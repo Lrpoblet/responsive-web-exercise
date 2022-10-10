@@ -1,0 +1,42 @@
+.section-2 {
+  background-color: $ice-blue;
+  padding: 29px 15px 50px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  //   el botón no se centra
+
+  .title-section {
+    @include section-title;
+    margin-bottom: 49px;
+  }
+
+  article {
+    margin-bottom: 44px;
+    padding: 0 70px;
+  }
+
+  .title-article {
+    font-family: $font-title;
+    margin-bottom: 1px;
+    line-height: 30px;
+  }
+
+  .text-article {
+    // margin: 1px 2px 0;
+    line-height: 30px;
+  }
+
+  .more-reasons-container {
+    @include btn2;
+    background-color: $color-sec;
+    color: $ice-blue;
+    width: 184px;
+
+    &:hover {
+      background-color: $ice-blue;
+      color: $color-sec;
+      border: solid 2px $color-sec;
+    }
+  }
+}

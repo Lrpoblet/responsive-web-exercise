@@ -1,24 +1,64 @@
 .section-2 {
   background-color: $ice-blue;
   padding: 29px 15px 50px;
-  display: grid;
-  justify-content: center;
   text-align: center;
   line-height: 30px;
+
+  @media all and (min-width: 768px) {
+    padding: 36px 26.4px 50px 22.1px;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding: 61px 71.9px 50px 68.1px;
+  }
 
   .title-section {
     @include section-title;
     margin-bottom: 49px;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 38px;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-bottom: 43px;
+    }
+  }
+
+  .article-container {
+    @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   .article {
     margin-bottom: 44px;
     padding: 0 70px;
+
+    @media all and (min-width: 768px) {
+      padding: 0 13.6px;
+    }
+
+    @media all and (min-width: 1200px) {
+      padding: 0 13.1px;
+    }
   }
 
   .title-article {
     font-family: $font-title;
     margin-bottom: 1px;
+
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .text-article {
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   .more-reasons-container {
@@ -27,6 +67,16 @@
     color: $ice-blue;
     width: 184px;
     margin: 0 auto;
+    margin-bottom: 10px;
+
+    @media all and (min-width: 768px) {
+      margin-top: 23px;
+      width: 210px;
+    }
+
+    @media all and (min-width: 1200px) {
+      width: 255px;
+    }
 
     &:hover {
       background-color: $ice-blue;

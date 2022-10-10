@@ -4,4 +4,13 @@
   line-height: 30px;
   font-weight: bold;
   text-transform: capitalize;
+
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  @media all and (min-width: 1200px) {
+    font-size: 32px;
+  }
 }

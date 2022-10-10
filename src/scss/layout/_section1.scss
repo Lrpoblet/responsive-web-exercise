@@ -1,11 +1,23 @@
 .section-1 {
   padding: 37px 15px 35px;
 
+  @media all and (min-width: 768px) {
+    padding: 37px 39px 50px;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding: 65px 275px 50px;
+  }
+
   .pre-title-section {
     font-size: 14px;
-    line-height: 2.14;
+    line-height: 30px;
     color: $light-blue;
     text-transform: capitalize;
+
+    @media all and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   .title-section {
@@ -16,6 +28,15 @@
     color: $gray-brown;
     line-height: 30px;
     margin: 20px 0 26px;
+
+    @media all and (min-width: 768px) {
+      margin: 27px 0;
+      font-size: 20px;
+    }
+
+    @media all and (min-width: 1200px) {
+      margin-top: 32px;
+    }
   }
 
   .container-go {
@@ -24,13 +45,21 @@
     border: solid 2px $color-sec;
     color: $color-sec;
 
+    @media all and (min-width: 768px) {
+      width: 91px;
+    }
+
+    @media all and (min-width: 1200px) {
+      width: 160px;
+    }
+
     &:hover {
       background-color: $color-sec;
       color: $color-bg;
     }
 
     .go {
-      //parece más negrita en el ejemplo
+      font-size: 20px;
       font-weight: 500;
       line-height: 45px;
     }

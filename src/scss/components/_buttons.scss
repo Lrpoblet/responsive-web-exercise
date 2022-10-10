@@ -1,6 +1,10 @@
 @mixin btn {
   background-color: $color-bg;
   border-radius: 22.5px;
+
+  &:hover {
+    transform: scale(1.25);
+  }
 }
 
 @mixin btn2 {

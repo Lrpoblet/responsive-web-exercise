@@ -1,16 +1,29 @@
-$fontText: "Roboto", sans-serif;
+$font-title: "Roboto Slab", serif;
+$font-text: "Roboto", sans-serif;
 $size: 18px;
-
-:root {
-  font: $size $fontText;
-}
 
 // colors
 $orange: #f26002;
 $white: #fff;
 $light-blue: #8ccbea;
 $blue: #0271bc;
+$gray-brown: #4a4a4a;
 $dark-blue: #304268;
+$black: #000;
 
 $color-bg: $blue;
 $color-sec: $orange;
+
+:root {
+  font: $size $font-text;
+  background-color: $white;
+  color: $black;
+}
+
+@mixin section-title {
+  font-size: 24px;
+  font-family: $font-title;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}

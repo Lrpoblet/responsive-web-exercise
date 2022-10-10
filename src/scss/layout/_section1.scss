@@ -1,0 +1,39 @@
+.section-1 {
+  padding: 37px 15px 35px;
+
+  .pre-title-section {
+    font-size: 14px;
+    line-height: 2.14;
+    color: $light-blue;
+    text-transform: capitalize;
+  }
+
+  .title-section {
+    @include section-title;
+  }
+
+  .text-section-1 {
+    color: $gray-brown;
+    line-height: 1.67;
+    margin: 20px 0 26px;
+  }
+
+  .container-go {
+    @include btn2;
+    width: 76px;
+    border: solid 2px $color-sec;
+    color: $color-sec;
+    font-size: 20px;
+
+    &:hover {
+      background-color: $color-sec;
+      color: $white;
+    }
+
+    .go {
+      //parece más negrita en el ejemplo
+      font-weight: 500;
+      line-height: 2.25;
+    }
+  }
+}

@@ -12,11 +12,11 @@ $gray-brown: #4a4a4a;
 $dark-blue: #304268;
 $black: #000;
 
-$color-bg: $blue;
+$color-bg: $white;
 $color-sec: $orange;
 
 :root {
   font: $size $font-text;
-  background-color: $white;
+  background-color: $color-bg;
   color: $black;
 }

@@ -1,10 +1,11 @@
+//   el botón no se centra
+
 .section-2 {
   background-color: $ice-blue;
   padding: 29px 15px 50px;
   display: grid;
   justify-content: center;
   text-align: center;
-  //   el botón no se centra
 
   .title-section {
     @include section-title;

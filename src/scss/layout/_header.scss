@@ -1,8 +1,4 @@
-// por fijar el menu y que no se vaya al hacer scroll,
-// centrar las letras
-// hacer que el titulo ocupe el ancho
-// ver lo del rotate
-// aclarar lo de la funcion para el rem
+// por fijar el menu y que no se vaya al hacer scroll
 
 .header {
   height: 100vh;
@@ -30,7 +26,7 @@
   }
 
   .title {
-    color: $white;
+    color: $color-bg;
     font-family: $font-title;
     font-size: 42px;
     text-transform: uppercase;
@@ -41,14 +37,14 @@
   }
 
   .subtitle {
-    color: $white;
+    color: $color-bg;
     font-size: 16px;
     line-height: 19px;
     margin-top: 10px;
   }
 
   .hamb {
-    background-color: $color-bg;
+    background-color: $blue;
     padding: 15px 14px;
     position: fixed;
     // no se queda fixed
@@ -60,5 +56,6 @@
   .down {
     @include btn;
     margin-top: 35.2px;
+    padding: 14.8px 10.1px 12.6px 11px;
   }
 }

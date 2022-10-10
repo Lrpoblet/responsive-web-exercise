@@ -1,8 +1,39 @@
-// .page__footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-//   color: $color-secondary;
-// }
+.footer {
+  background-color: $dark-blue;
+  color: $color-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 15px 36px;
+  line-height: 30px;
+
+  .scroll-up {
+    @include btn;
+    padding: 11px 12.4px 10px 12px;
+    transform: translateY(-50%);
+  }
+  .nav {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .menu {
+    font-size: 16px;
+    margin-bottom: 30px;
+
+    &-link {
+      color: $color-bg;
+      text-decoration: none;
+      padding: 10px;
+    }
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  .heart {
+    color: $color-sec;
+  }
+}

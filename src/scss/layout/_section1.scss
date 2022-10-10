@@ -14,7 +14,7 @@
 
   .text-section-1 {
     color: $gray-brown;
-    line-height: 1.67;
+    line-height: 30px;
     margin: 20px 0 26px;
   }
 
@@ -26,13 +26,13 @@
 
     &:hover {
       background-color: $color-sec;
-      color: $white;
+      color: $color-bg;
     }
 
     .go {
       //parece más negrita en el ejemplo
       font-weight: 500;
-      line-height: 2.25;
+      line-height: 45px;
     }
   }
 }

@@ -42,14 +42,15 @@
     margin-top: 10px;
   }
 
+  .link-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
   .hamb {
     background-color: $blue;
     padding: 15px 14px;
-    position: fixed;
-    // no se queda fixed
-    top: 0;
-    left: 0;
-    z-index: 20;
   }
 
   .down {

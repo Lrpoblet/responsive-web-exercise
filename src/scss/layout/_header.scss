@@ -17,6 +17,14 @@
   align-items: center;
   justify-content: flex-end;
 
+  @media all and (min-width: 768px) {
+    padding-bottom: 45px;
+  }
+
+  @media all and (min-width: 1280px) {
+    padding-bottom: 13px;
+  }
+
   &-content {
     display: flex;
     flex-direction: column;
@@ -33,6 +41,19 @@
     word-spacing: 100vw;
     line-height: 55px;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+      margin-bottom: 36.8px;
+    }
+
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      line-height: 132px;
+      margin-bottom: 0;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
   }
 
   .subtitle {
@@ -40,6 +61,21 @@
     font-size: 16px;
     line-height: 19px;
     margin-top: 10px;
+
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: 0;
+      max-width: 23ch;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    @media all and (min-width: 1280px) {
+      margin-top: 10px;
+      max-width: none;
+      margin-bottom: 34px;
+    }
   }
 
   .link-menu {
@@ -51,12 +87,16 @@
 
   .hamb {
     background-color: $blue;
-    padding: 15px 14px;
+    padding: 15px;
   }
 
   .down {
     @include btn;
     margin-top: 35.2px;
     padding: 14.8px 10.1px 12.6px 11px;
+
+    @media all and (min-width: 768px) {
+      margin: 0px;
+    }
   }
 }

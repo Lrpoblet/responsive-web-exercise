@@ -1,0 +1,7 @@
+@mixin section-title {
+  font-size: 24px;
+  font-family: $font-title;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}

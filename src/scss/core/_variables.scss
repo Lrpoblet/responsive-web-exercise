@@ -19,11 +19,3 @@ $color-sec: $orange;
   background-color: $white;
   color: $black;
 }
-
-@mixin section-title {
-  font-size: 24px;
-  font-family: $font-title;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: capitalize;
-}

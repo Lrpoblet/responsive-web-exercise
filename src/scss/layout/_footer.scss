@@ -27,6 +27,10 @@
       text-decoration: none;
       padding: 10px;
     }
+
+    &-link:hover {
+      color: $color-sec;
+    }
   }
 
   .copyright {

@@ -11,17 +11,13 @@
 }
 
 .header {
-  // position: relative;
-  // top: 0;
   height: 100vh;
-  flex-grow: 0;
+  margin-bottom: 24.9px;
+  padding-bottom: 34.1px;
 
   background-image: url(../images/cover.jpeg);
   background-size: cover;
   background-position-x: center;
-
-  margin-bottom: 24.9px;
-  padding-bottom: 34.1px;
 
   display: flex;
   flex-direction: column;

@@ -1,11 +1,11 @@
 .section-1 {
   padding: 37px 15px 35px;
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 768px) and (max-width: 1280px) {
     padding: 37px 39px 50px;
   }
 
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1280px) {
     padding: 65px 275px 50px;
   }
 
@@ -15,7 +15,7 @@
     color: $light-blue;
     text-transform: capitalize;
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: 1280px) {
       font-size: 16px;
     }
   }
@@ -29,12 +29,12 @@
     line-height: 30px;
     margin: 20px 0 26px;
 
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) and (max-width: 1280px) {
       margin: 27px 0;
       font-size: 20px;
     }
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: 1280px) {
       margin-top: 32px;
     }
   }
@@ -45,11 +45,11 @@
     border: solid 2px $color-sec;
     color: $color-sec;
 
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) and (max-width: 1280px) {
       width: 91px;
     }
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: 1280px) {
       width: 160px;
     }
 

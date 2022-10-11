@@ -1,13 +1,24 @@
-// por fijar el menu y que no se vaya al hacer scroll
+.link-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .hamb {
+    background-color: $blue;
+    padding: 15px;
+  }
+}
 
 .header {
+  // position: relative;
+  // top: 0;
   height: 100vh;
   flex-grow: 0;
 
   background-image: url(../images/cover.jpeg);
   background-size: cover;
   background-position-x: center;
-  transform: rotate(-0.23deg);
 
   margin-bottom: 24.9px;
   padding-bottom: 34.1px;
@@ -29,7 +40,6 @@
   &-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -39,7 +49,7 @@
     font-size: 42px;
     text-transform: uppercase;
     text-align: center;
-    word-spacing: 100vw;
+    word-spacing: 100%;
     line-height: 55px;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 
@@ -77,18 +87,6 @@
       max-width: none;
       margin-bottom: 34px;
     }
-  }
-
-  .link-menu {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  .hamb {
-    background-color: $blue;
-    padding: 15px;
   }
 
   .down {

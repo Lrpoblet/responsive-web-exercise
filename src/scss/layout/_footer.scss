@@ -8,36 +8,81 @@
   padding: 0px 15px 36px;
   line-height: 30px;
 
+  @media all and (min-width: 768px) {
+    padding: 0 39px 40px;
+  }
+
   .scroll-up {
     @include btn;
     padding: 11px 12.4px 10px 12px;
     transform: translateY(-50%);
   }
-  .nav {
-    text-transform: uppercase;
-    text-decoration: none;
-  }
 
-  .menu {
-    font-size: 16px;
-    margin-bottom: 30px;
-
-    &-link {
-      color: $color-bg;
-      text-decoration: none;
-      padding: 10px;
+  &-container {
+    @media all and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
     }
 
-    &-link:hover {
-      color: $color-sec;
+    @media all and (min-width: 1280px) {
+      justify-content: center;
+    }
+
+    .nav {
+      text-transform: uppercase;
+      text-decoration: none;
+
+      @media all and (min-width: 768px) and (max-width: 1280px) {
+        width: 33%;
+      }
+      @media all and (min-width: 1280px) {
+        width: 14.3%;
+      }
+
+      .menu {
+        font-size: 16px;
+        margin-bottom: 30px;
+
+        @media all and (min-width: 768px) {
+          margin-bottom: 0;
+        }
+
+        &-link {
+          color: $color-bg;
+          text-decoration: none;
+        }
+
+        &-link:hover {
+          color: $color-sec;
+        }
+      }
+    }
+    .nav-sections {
+      order: 2;
+
+      @media all and (min-width: 1280px) {
+        margin: 0 30px;
+      }
+    }
+    .nav-social {
+      order: 3;
     }
   }
 
   .copyright {
     font-size: 14px;
-  }
+    order: 1;
 
-  .heart {
-    color: $color-sec;
+    @media all and (min-width: 768px) and (max-width: 1280px) {
+      width: 33%;
+    }
+    @media all and (min-width: 1280px) {
+      width: 14.3%;
+    }
+
+    .heart {
+      color: $color-sec;
+    }
   }
 }

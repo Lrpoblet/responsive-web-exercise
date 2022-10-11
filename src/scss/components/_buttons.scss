@@ -1,6 +1,11 @@
 @mixin btn {
-  background-color: $color-bg;
   border-radius: 22.5px;
+
+  animation-name: change-color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+  transition: all 0.5s ease-in;
 
   &:hover {
     transform: scale(1.25);

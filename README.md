@@ -1,4 +1,4 @@
-# 1st Module Final Evaluation
+# Responsive design, HTML and SASS page
 
 This evaluation is developed using HTML, SASS and the Adalab Web Starter Kit (NodeJS and Gulp).
 
